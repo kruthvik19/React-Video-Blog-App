@@ -33,8 +33,9 @@ This project is a Video Management Application built with React, Chakra UI, Fire
 
 ```bash
 npm install
+```
 
-## Set up Firebase
+Set up Firebase
 
 1. **Create a Firebase project in the Firebase Console.**
 2. **Enable Authentication** (Google Sign-In).
