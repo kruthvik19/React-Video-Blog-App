@@ -1,4 +1,4 @@
-# Video Management App
+# Video Blog App
 
 This project is a Video Management Application built with React, Chakra UI, Firebase, and React Router. The app allows users to browse, create, update, and search for videos. It also supports user authentication via Google Sign-In.
 
