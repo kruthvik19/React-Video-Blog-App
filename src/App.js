@@ -9,14 +9,18 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const accessToken = userAccessToken();
-    if (!accessToken) {
-      navigate("/login", { replace: true });
-    } else {
-      const [userInfo] = fetchUser();
-      setUser(userInfo);
-    }
-  }, []);
+    const fetchAndSetUser = () => {
+      const accessToken = userAccessToken();
+      if (!accessToken) {
+        navigate("/login", { replace: true });
+      } else {
+        const [userInfo] = fetchUser();
+        setUser(userInfo);
+      }
+    };
+
+    fetchAndSetUser();
+  }, [navigate]); // Add 'navigate' as a dependency to resolve the warning
 
   return (
     <Routes>
