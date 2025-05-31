@@ -51,7 +51,6 @@ const VideoPin = ({ data }) => {
           src={data.videoUrl}
           muted
           onMouseOver={(e) => e.target.play()}
-          onMouseOut={(e) => e.target.pause()}
         />
       </Link>
 
